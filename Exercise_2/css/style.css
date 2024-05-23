@@ -29,6 +29,11 @@ nav {
   justify-content: space-between;
 }
 
+main {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 footer {
   flex-wrap: wrap;
   background: #efecff;
@@ -71,6 +76,35 @@ nav a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 6px;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+}
+
+.main-image-caption {
+  margin: 32px;
+  width: 448px;
+  display: block;
+  position: absolute;
+}
+.main-image h1 {
+  color: #612999;
+  font-family: Nunito;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.main-image p {
+  color: #000;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .footer-links-column {

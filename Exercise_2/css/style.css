@@ -107,6 +107,34 @@ nav a {
   line-height: normal;
 }
 
+.main-about {
+  display: block;
+  width: 100%;
+}
+
+.main-about h2 {
+  margin: 32px;
+  color: #612999;
+  font-family: Rubik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.main-about p {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+  color: #000;
+  text-align: justify;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140.625%;
+}
+
 .footer-links-column {
   display: block;
   margin: 32px;

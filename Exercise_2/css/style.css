@@ -292,6 +292,23 @@ nav a {
   line-height: 40px;
 }
 
+.request-form {
+  display: block;
+  width: 100%;
+  margin-left: 32px;
+  margin-bottom: 32px;
+}
+
+.request-form h2 {
+  margin-bottom: 32px;
+  color: #612999;
+  font-family: Rubik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
 .list-of-games li {
   display: flex;
   align-items: center;
@@ -312,6 +329,52 @@ nav a {
 .rocket-icon {
   position: absolute;
   margin-left: 26px;
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.form-input div {
+  display: flex;
+  align-items: center;
+}
+
+.form-input label {
+  margin-right: 64px;
+  color: #000;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.form-input input {
+  padding-left: 16px;
+  margin-right: 32px;
+  width: 50%;
+  border-radius: 16px;
+  color: #612999;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-input input[type="submit"] {
+  height: 56px;
+  width: 280px;
+  border-radius: 16px;
+  background-color: #efecff;
+  color: #612999;
+  font-family: Rubik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
 }
 
 .footer-links-column {

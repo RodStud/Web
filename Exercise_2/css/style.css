@@ -29,6 +29,11 @@ nav {
   justify-content: space-between;
 }
 
+footer {
+  flex-wrap: wrap;
+  background: #efecff;
+}
+
 nav a.current-page {
   font-weight: 700;
 }
@@ -66,4 +71,62 @@ nav a {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 6px;
+}
+
+.footer-links-column {
+  display: block;
+  margin: 32px;
+  margin-right: 118px;
+  margin-bottom: 0px;
+}
+
+.footer-links-column h2 {
+  margin-bottom: 16px;
+  color: #333;
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.footer-links-column li {
+  margin: 4px;
+  list-style: none;
+}
+
+.footer-links-column a {
+  color: #333;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-social-media {
+  margin-top: 32px;
+  width: 100%;
+  display: block;
+}
+
+.footer-social-media a {
+  margin: 12px;
+}
+
+.footer-social-media a:first-child {
+  margin-left: 32px;
+}
+
+.copyright {
+  margin-top: 16px;
+  margin-left: 32px;
+  margin-bottom: 50px;
+  color: #333;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }

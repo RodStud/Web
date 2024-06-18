@@ -1,19 +1,50 @@
 let person_name = "RodionNovakovskiy";
-let colors = ["MediumSpringGreen", "MediumVioletRed", "MediumTurquoise", "MediumPurple"];
-let colors_index = 0;
 let name_index = 0;
+let colors_index = 0;
+let colors = [
+  "MediumSpringGreen",
+  "MediumVioletRed",
+  "MediumTurquoise",
+  "MediumPurple",
+];
 
 window.onload = () => {
   initRectangles();
+  initSongs();
+  initButton();
 };
 
 function initRectangles() {
-  for (i = 0; i < person_name.length; i++) {
+  for (let i = 0; i < person_name.length; i++) {
     addRectangle();
   }
 }
 
 function initSongs() {}
+
+function initButton() {
+  let header_buttons = document.getElementsByClassName("header-button");
+  for (let i = 0; i < header_buttons.length; i++) {
+    let button = header_buttons[i];
+    button.addEventListener("mouseover", function () {
+      button.style.backgroundColor = "#a0a0a0";
+    });
+    button.addEventListener("mouseout", function () {
+      button.style.backgroundColor = "#f0f0f0";
+    });
+    switch (button.id) {
+      case "add-button":
+        button.addEventListener("click", addRectangle);
+        break;
+      case "switch-button":
+        button.addEventListener("click", switchRectanglesSongs);
+        break;
+      case "sub-button":
+        button.addEventListener("click", subtractRectangle);
+        break;
+    }
+  }
+}
 
 function chooseRectangleColor() {}
 
@@ -25,7 +56,14 @@ function addRectangle() {
   colorIndexChange(1);
 }
 
-function subtractRectangle() {}
+function subtractRectangle() {
+  let squares_container = document.getElementsByClassName("square");
+  if (squares_container.length > 0) {
+    squares_container[squares_container.length - 1].remove();
+    nameIndexChange(-1);
+    colorIndexChange(-1);
+  }
+}
 
 function switchRectanglesSongs() {}
 

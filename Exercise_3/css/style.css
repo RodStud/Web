@@ -28,6 +28,8 @@ header {
     align-items: center;
     font-size: large;
     flex-wrap: wrap;
+    cursor: pointer;
+    user-select: none;
 }
 
 #add-button {
@@ -48,7 +50,7 @@ header {
 #wrapper {
     margin: auto;
     width: 1000px;
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     background-color: LightSalmon;
 }
 

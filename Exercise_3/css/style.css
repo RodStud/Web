@@ -10,3 +10,36 @@ header, main, footer, nav, aside, section, article, div {
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+    display: flex;
+    background-color: cadetblue;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-button {
+    margin: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: white;
+    border: 1px solid;
+    align-items: center;
+    font-size: large;
+}
+
+#add-button {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#switch-button {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+#sub-button {
+    padding-left: 20px;
+    padding-right: 20px;
+}

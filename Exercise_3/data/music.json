@@ -1,3 +1,49 @@
 {
-
-}
+    "songs": [
+      {
+        "id": 1,
+        "name": "Awake and Alive",
+        "artist": "Skillet"
+      },
+      {
+        "id": 2,
+        "name": "Boulevard Of Broken Dreams",
+        "artist": "Green Day"
+      },
+      {
+        "id": 3,
+        "name": "Californication",
+        "artist": "Red Hot Chili Peppers"
+      },
+      {
+        "id": 4,
+        "name": "Behind Blue Eyes",
+        "artist": "Limp Bizkit"
+      },
+      {
+        "id": 5,
+        "name": "Zombie",
+        "artist": "The Cranberries"
+      },
+      {
+        "id": 6,
+        "name": "Hurt",
+        "artist": "Johnny Cash"
+      },
+      {
+        "id": 7,
+        "name": "Sleeping Sun",
+        "artist": "Nightwish"
+      },
+      {
+        "id": 8,
+        "name": "What I've Done",
+        "artist": "Linkin Park"
+      },
+      {
+        "id": 9,
+        "name": "Still Loving You",
+        "artist": "Scorpions"
+      }
+    ]
+  }

@@ -43,3 +43,11 @@ header {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+#wrapper {
+    margin: auto;
+    width: 1000px;
+    height: calc(100vh - 100px);
+    background-color: rgb(120, 230, 220);
+    justify-items: start;
+}

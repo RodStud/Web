@@ -19,6 +19,21 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
+h1 {
+    display: block;
+    padding-top: 16px;
+    font-size: 32px;
+    text-align: center;
+
+}
+
+li {
+    font-size: 24px;
+    list-style: none;
+    margin-left: 32px;
+    margin-top: 8px;
+}
 .header-button {
     margin: 24px;
     padding-top: 12px;

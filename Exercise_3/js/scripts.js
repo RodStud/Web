@@ -22,17 +22,21 @@ function initRectangles() {
 }
 
 function initSongs() {
-    document.getElementById("songs-container").style.display = "none";
+  let song_container = document.getElementById("songs-container");
+  song_container.style.display = "none";
   fetch("data/music.json")
     .then((response) => response.json())
     .then((data) => {
-      for (let i = 0; i < data.length; i++) {
-        populateSongsInList();
+      for (let i = 0; i < data.songs.length; i++) {
+        let song = data.songs[i];
+        let new_song = `<h1>${song.id}. ${song.artist} - ${song.name}</h1>`;
+        song_container.innerHTML += new_song;
       }
     })
-    .catch((error) => console.error("Error loading JSON:", error));
+    .catch((error) =>
+      console.error("Parsing or dawnloading of JSON error:", error)
+    );
 }
-
 function initButton() {
   let header_buttons = document.getElementsByClassName("header-button");
   for (let i = 0; i < header_buttons.length; i++) {
@@ -83,16 +87,17 @@ function subtractRectangle() {
 function switchRectanglesSongs() {
   let Rectangles = document.getElementById("squares-container");
   let Songs = document.getElementById("songs-container");
+  let switch_button = document.getElementById("switch-button");
   if (Rectangles.style.display == "flex") {
+    switch_button.innerHTML = "Switch to rectangles";
     Rectangles.style.display = "none";
     Songs.style.display = "block";
   } else {
+    switch_button.innerHTML = "Switch to songs";
     Rectangles.style.display = "flex";
     Songs.style.display = "none";
   }
 }
-
-function populateSongsInList() {}
 
 function nameIndexChange(number) {
   if (name_index + number >= person_name.length) {

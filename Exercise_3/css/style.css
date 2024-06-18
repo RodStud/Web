@@ -27,6 +27,7 @@ header {
     border: 1px solid;
     align-items: center;
     font-size: large;
+    flex-wrap: wrap;
 }
 
 #add-button {
@@ -48,6 +49,22 @@ header {
     margin: auto;
     width: 1000px;
     height: calc(100vh - 100px);
-    background-color: rgb(120, 230, 220);
-    justify-items: start;
+    background-color: LightSalmon;
+}
+
+#squares-container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.square {
+    display: block;
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    margin-right: 0px;
+    font-size: 24px;
+    text-align: center;
 }

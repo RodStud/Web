@@ -27,9 +27,12 @@ function initSongs() {
   fetch("data/music.json")
     .then((response) => response.json())
     .then((data) => {
+      let new_title = `<h1>${data.title}</h1><ul id="songs-list"></ul>`;
+      song_container.innerHTML += new_title;
+      song_container = document.getElementById("songs-list");
       for (let i = 0; i < data.songs.length; i++) {
         let song = data.songs[i];
-        let new_song = `<h1>${song.id}. ${song.artist} - ${song.name}</h1>`;
+        let new_song = `<li>${song.id}. ${song.artist} - ${song.name}</li>`;
         song_container.innerHTML += new_song;
       }
     })

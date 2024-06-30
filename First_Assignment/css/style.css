@@ -18,9 +18,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body > div {
+body>div {
+    width: 100vw;
     display: flex;
     justify-content: left;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*--------------------------------- Header ---------------------------------*/
@@ -32,20 +37,25 @@ header {
     justify-content: start;
 }
 
-#logo {
-    height: 118px;
-    width: 118px;
-    margin-left: 80px;
-    background-image: url("../images/Logo.png");
+.logo-container {
+    display: flex;
+    width: max(15vw, 288px);
 }
 
-#header-search-bar {
+.logo {
+    height: 118px;
+    width: 118px;
+    margin-left: 3.5vw;
+}
+
+.header-search-bar {
     height: 48px;
-    width: 40%;
+    width: 35vw;
     max-width: 576px;
     border-radius: 50px;
     margin-top: 36px;
-    margin-left: 136px;
+    margin-left: 0vw;
+    margin-right: 24px;
     border: none;
     text-indent: 48px;
     background-image: url("../images/Search.png");
@@ -53,7 +63,7 @@ header {
     background-position: 12px;
 }
 
-#header-profile-menu {
+.header-profile-menu {
     display: flex;
     cursor: pointer;
     margin-left: auto;
@@ -61,7 +71,7 @@ header {
     width: 300px;
 }
 
-#header-profile-picture {
+.header-profile-picture {
     display: block;
     height: 96px;
     width: 96px;
@@ -69,7 +79,7 @@ header {
     position: relative;
 }
 
-#header-profile-name-box {
+.header-profile-name-box {
     display: flex;
     height: 64px;
     width: 268px;
@@ -80,7 +90,7 @@ header {
     text-align: right;
 }
 
-#header-profile-name {
+.header-profile-name {
     height: 100%;
     width: 150px;
     color: black;
@@ -92,7 +102,7 @@ header {
     line-height: 1.2;
 }
 
-#header-profile-dropdown-button {
+.header-profile-dropdown-button {
     margin-left: 48px;
     margin-top: 30px;
     width: 12px;
@@ -103,9 +113,31 @@ header {
 /*--------------------------------- Nav ---------------------------------*/
 
 nav {
-    width: 288px;
+    width: max(15vw, 288px);
     height: calc(100vh - 198px);
     background-color: #D2F4EA;
+}
+
+.nav-bar {
+    margin-top: 48px;
+}
+
+.nav-bar-element {
+    width: 100%;
+    height: 64px;
+    margin-left: 1vw;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+}
+
+.nav-bar-element-text {
+    margin-left: 1vw;
+    color: black;
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: 700;
+    word-wrap: break-word
 }
 
 /*--------------------------------- Main ---------------------------------*/
@@ -116,7 +148,7 @@ main {
     background-color: #d42222;
 }
 
-#main-bread-crumbs {
+.main-bread-crumbs {
     width: 100%;
     height: 34px;
     background-color: #aa22d4;
@@ -131,4 +163,27 @@ footer {
     left: 0;
     bottom: 0;
     background-color: #20C997;
+}
+
+@media only screen and (max-width:960px) {
+
+    .logo-container {
+        margin-right: 32px;
+        display: flex;
+        width: 100vw;
+        margin: auto;
+        justify-content: end;
+    }
+
+    .header-search-bar {
+        display: none;
+    }
+
+    .header-profile-menu {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
 }

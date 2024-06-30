@@ -94,3 +94,14 @@ header {
     background-image: url("../images/Dropdawn_Button.png");
     background-repeat: no-repeat;
 }
+
+/*--------------------------------- Footer ---------------------------------*/
+
+footer {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #20C997;
+}
